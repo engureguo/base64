@@ -15,10 +15,10 @@ input_data = st.text_input("Enter the string to be encoded/decoded")
 if st.button("Encode"):
     encoded_data = base64.b64encode(bytes(input_data, 'utf-8'))
     #encoded_data = input_data.encode('base64', 'strict')
-    st.write(encoded_data)
+    st.write(encoded_data.decode('utf-8'))
 
 # Decoding button
 if st.button("Decode"):
     decoded_data = base64.b64decode(bytes(input_data, 'utf-8'))
     #decoded_data = input_data.decode('base64', 'strict')
-    st.write(decoded_data)
+    st.write(decoded_data.decode('utf-8'))
