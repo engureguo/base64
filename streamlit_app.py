@@ -1,5 +1,3 @@
-：
-
 import streamlit as st
 
 # Page title
